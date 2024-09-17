@@ -9,6 +9,6 @@ vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")
 
 vim.keymap.set('n', '<TAB>', ':bNext<CR>')
 vim.keymap.set('n', '<S-TAB>', ':bprevious<CR>')
-vim.keymap.set('n', '<leader>q', ':bdelete<CR>')
+vim.keymap.set('n', '<leader>q', ':bdelete<CR>', { desc = 'Buffer delete' })
 
-vim.keymap.set('n', '<leader>pv', ':Ex<CR>')
+vim.keymap.set('n', '<leader>pv', ':Ex<CR>', { desc = '[P]roject options' })

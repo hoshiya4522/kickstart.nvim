@@ -14,10 +14,10 @@ return {
       local ui = require 'harpoon.ui'
 
       -- Add a file to the Harpoon list
-      vim.keymap.set('n', '<leader>a', mark.add_file, { desc = 'Harpoon Add File' })
+      vim.keymap.set('n', '<leader>a', mark.add_file, { desc = 'Harpoon [A]dd File' })
 
       -- Toggle the Harpoon menu
-      vim.keymap.set('n', '<leader>e', ui.toggle_quick_menu, { desc = 'Harpoon Menu' })
+      vim.keymap.set('n', '<leader>e', ui.toggle_quick_menu, { desc = 'Harpoon Menu [E]dit' })
 
       -- Navigate to the first, second, third, and fourth file
       -- asdf because it's the left hand home row.
