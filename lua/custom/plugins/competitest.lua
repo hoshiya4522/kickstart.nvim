@@ -8,6 +8,9 @@ return {
     dependencies = 'MunifTanjim/nui.nvim',
     config = function()
       require('competitest').setup()
+
+      vim.keymap.set('n', '<leader>pt', ':CompetiTest receive testcases<CR>', { desc = 'Com[p]etiTest recieve [t]estcases' })
+      vim.keymap.set('n', '<leader>pr', ':CompetiTest run<CR>', { desc = 'Com[p]etiTest [r]un' })
     end,
   },
 }
