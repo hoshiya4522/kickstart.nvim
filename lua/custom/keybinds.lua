@@ -36,3 +36,9 @@ vim.keymap.set('n', '<C-f>', ':<C-f>i', { noremap = true })
 vim.keymap.set('v', '<C-f>', ':<C-f>i', { noremap = true })
 
 vim.keymap.set('n', '<leader>cf', 'mpggVGy`p', { desc = '[C]opy [F]ile' })
+
+vim.keymap.set('n', 'K', function()
+  vim.lsp.buf.hover { border = 'rounded' }
+end)
+
+-- require 'custom/specific/raylib'
